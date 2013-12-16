@@ -105,7 +105,7 @@ namespace PyramidPanic
 
 
                  // maak een switch case instructie voor de variabele burronActive.
-                 /*switch (this.buttonActive)
+                 switch (this.buttonActive)
                  {
                      
                      case Buttons.Start:
@@ -143,13 +143,13 @@ namespace PyramidPanic
                      case Buttons.Quit:
                          if (Input.EdgeDetectKeyDown(Keys.Enter))
                          {
-                             this.game.Exit();
+                             this.game.IState = this.game.Quitscene;
                          }
                          this.quitButton.Color = Color.Silver;
                          break;
                  
                  }
-                  */
+                  
              }
              if (this.startButton.Rectangle.Intersects(Input.MouseRect()))
              {
