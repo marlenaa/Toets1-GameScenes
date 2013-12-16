@@ -28,11 +28,16 @@ namespace PyramidPanic
         private GameOverScene gameOverScene;
         private LoadScene loadScene;
         private ScoreScene scoreScene;
+        private QuitScene quitScene;
         private IState iState;
         
         //properties
         //maak de interface variabele iState buiten de claas d.m.v een prpertie IState
         #region Properties
+        public QuitScene Quitscene
+        {
+            get { return this.quitScene; }
+        }
         public LoadScene LoadScene
         {
             get { return this.loadScene; }
@@ -103,6 +108,7 @@ namespace PyramidPanic
             this.helpScene = new HelpScene(this);
             this.gameOverScene = new GameOverScene(this);
             this.scoreScene = new ScoreScene(this);
+            this.quitScene = new QuitScene(this);
                     //this.istate word aangeroepen
             this.iState = this.StartScene;
             this.loadScene = new LoadScene(this);

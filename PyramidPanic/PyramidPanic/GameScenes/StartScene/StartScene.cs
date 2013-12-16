@@ -187,7 +187,7 @@ namespace PyramidPanic
              {
                  if (Input.EdgeDetectMousePressLeft())
                  {
-                     this.game.Exit();
+                     this.game.IState = this.game.Quitscene;
                  }
                  this.quitButton.Color = Color.Silver;
              }

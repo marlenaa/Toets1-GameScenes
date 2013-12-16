@@ -126,7 +126,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Game\Program.cs" />
     <Compile Include="Game\PyramidPanic.cs" />
-    <Compile Include="QuitScene\QuitScene.cs" />
+    <Compile Include="GameScenes\QuitScene\QuitScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="pyramid.ico" />

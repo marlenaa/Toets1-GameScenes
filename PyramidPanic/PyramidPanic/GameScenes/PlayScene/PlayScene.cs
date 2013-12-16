@@ -123,11 +123,11 @@ namespace PyramidPanic
         {
             if (Input.EdgeDetectKeyDown(Keys.W))
             {
-                this.game.IState = this.game.ScoreScene;
+                this.game.IState = this.game.StartScene;
             }
             if (Input.EdgeDetectKeyDown(Keys.Q))
             {
-                this.game.IState = this.game.StartScene;
+                this.game.IState = this.game.Quitscene;
             }
 
             if (this.score < 0)
