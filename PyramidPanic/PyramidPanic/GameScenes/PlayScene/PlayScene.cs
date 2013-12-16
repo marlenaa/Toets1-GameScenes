@@ -84,7 +84,7 @@ namespace PyramidPanic
             this.lives3 = new Image(this.game, @"PlayScene/Lives", new Vector2(150f, 448f));
             this.scarab = new Image(this.game, @"PlayScene/Scarab", new Vector2(260f, 449f));
             this.block = game.Content.Load<Texture2D>(@"PlayScene/Block");
-            this.LoadLevel("level1.txt");
+            //this.LoadLevel("level1.txt");
             this.texture = this.game.Content.Load<Texture2D>(@"PlayScene/Explorer");
             this.textureDestinationRect = new Rectangle(0, 0, 0, 0);
             this.textureSourceRect = new Rectangle(0, 0, 0, 0);
@@ -92,6 +92,7 @@ namespace PyramidPanic
         }
 
         #region levellader
+        /*
         private void LoadLevel(String File)
         {
             StreamReader stream = new StreamReader(File);
@@ -114,7 +115,7 @@ namespace PyramidPanic
                 case '1': this.staticObjects.Add(new Wall(x, y, this.block));
                     break;
             }
-        } 
+        } */
         #endregion
 
         //update methode
